@@ -11,7 +11,7 @@
 </script>
 
 <template>
-    <section class="main secs">
+    <section class="main-secs">
 
     </section>
     <h1>io sono il tuo stradannatissimo main</h1>
