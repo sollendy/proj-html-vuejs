@@ -1,7 +1,7 @@
 <script>
-    import {store} from '../store.js'
+    import {store} from "../store.js";
     export default {
-        name: "AppHead",
+        name: "AppMain",
         data() {
             return {
                 store,
@@ -11,9 +11,9 @@
 </script>
 
 <template>
-  <div><h1>salve mondoooooo</h1></div>
+
 </template>
 
-<style lang="scss" scoped>
+<style scoped lang="scss">
 
 </style>
