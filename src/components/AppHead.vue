@@ -11,7 +11,9 @@
 </script>
 
 <template>
-  <div><h1>salve mondoooooo</h1></div>
+    <div>
+        <h1>Ciurmaaaaa</h1>
+    </div>
 </template>
 
 <style lang="scss" scoped>
