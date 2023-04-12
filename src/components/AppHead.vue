@@ -12,7 +12,7 @@
 
 <template>
     <header>
-        <section class="head-secs" id="nav-superiore">ar
+        <section class="head-secs" id="nav-superiore">
             <nav class="pt-2 d-flex justify-content-between">
                 <div id="logo-up">
                     <img src="../assets/logo_seo_w_1x.png" alt="logo">
