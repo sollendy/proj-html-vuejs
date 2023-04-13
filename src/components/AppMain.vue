@@ -128,10 +128,32 @@
             </div>
         </section>
         <section id="quinta-sec">
-            <div class="sec-cont">
-                
+            <div class="sec-cnt d-flex flex-column align-items-center">
+                <div class="up-sec text-center">
+                    <h3 class="fw-bold">Our News</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, dolore nostrum</p>
+                </div>
+                <div class="card-cont d-flex justify-content-between text-center">
+                    <div class="cards d-flex flex-column gap-3">
+                        <div><img src="../assets/related-service-2-320x202.jpg" alt=""></div>
+                        <h5 class="fw-bold">Why You Need a SEO Agency Now</h5>
+                        <small>1 novembre 2017</small>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum quis dolor suscipit ad et voluptas facere voluptate.</p>
+                    </div>
+                    <div class="cards d-flex flex-column gap-3 text-center">
+                        <div><img src="../assets/related-service-4-320x202.jpg" alt=""></div>
+                        <h5 class="fw-bold">SEO Tips For Your Startup</h5>
+                        <small>1 novembre 2017</small>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum quis dolor suscipit ad et voluptas facere voluptate.</p>
+                    </div>
+                    <div class="cards d-flex flex-column gap-3">
+                        <div><img src="../assets/blog-post-6-320x202.jpg" alt=""></div>
+                        <h5 class="fw-bold">Image Optimization For Your Site</h5>
+                        <small>1 novembre 2017</small>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum quis dolor suscipit ad et voluptas facere voluptate.</p>
+                    </div>
+                </div>
             </div>
-            <h1>salve a tutti dalla quinta sezione</h1>
         </section>
     </main>
 </template>
@@ -246,6 +268,24 @@
                     width: 24%;
                     padding: 2%;
                     background-color: rgb(255, 255, 255);
+                }
+            }
+        }
+    }
+    #quinta-sec {
+        .sec-cnt {
+            width: 75%;
+            margin: auto;
+            .up-sec {
+            width: 35%;
+            padding: 5% 0 4% 0;
+            text-align: center;
+            }
+            .card-cont {
+                .cards{
+                    h5{
+                        color: rgb(255, 167, 55);
+                    }
                 }
             }
         }
