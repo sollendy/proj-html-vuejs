@@ -174,11 +174,20 @@
                         </div>
                     </div>
                 </div>
-                <div class="fascia-partner d-flex justify-content-between">
+                <div class="fascia-partner d-flex justify-content-around">
                     <img src="../assets/clients_partner_5-200x202.png" alt="">
                     <img src="../assets/clients_partner_6-200x202.png" alt="">
                     <img src="../assets/clients_partner_1-200x202.png" alt="">
                     <img src="../assets/clients_partner_2-200x202.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section id="ultima-sec">
+            <div class="sec-cnt w-75 m-auto d-flex justify-content-center">
+                <div class="text-cont w-50 d-flex flex-column align-items-center text-center gap-3">
+                    <h3>Start Your Free Consultation</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum quis dolor suscipit ad et voluptas facere voluptate.</p>
+                    <button>CONTACT US NOW</button>
                 </div>
             </div>
         </section>
@@ -343,11 +352,22 @@
             .fascia-partner {
                 width: 90%;
                 margin: auto;
-                border-top: .5px solid grey;
+                border-top: .5px solid rgb(225, 225, 225);
                 padding: 4% 0 4% 0;
                 img {
                     width: 10%;
                 }
+            }
+        }
+    }
+    #ultima-sec {
+        // background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2), rgba(0,0,0,0.2));
+        background: linear-gradient(  rgba(0,0,0,0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../assets/CTA-seo-1.jpg');
+        background-size: cover;
+        .sec-cnt {
+            .text-cont{
+                color: white;
+                padding: 5% 0 5% 0;
             }
         }
     }

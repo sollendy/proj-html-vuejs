@@ -2,6 +2,7 @@
 import {store} from './store'
  import AppHead from './components/AppHead.vue';
  import AppMain from './components/AppMain.vue';
+ import AppFoot from './components/AppFoot.vue';
  export default {
     data() {
         return {
@@ -9,8 +10,9 @@ import {store} from './store'
         }
     },
     components: {
-       AppHead,
-       AppMain,
+      AppHead,
+      AppMain,
+      AppFoot,
     },
 
  }
@@ -19,6 +21,7 @@ import {store} from './store'
 <template>
   <AppHead></AppHead>
   <AppMain></AppMain>
+  <AppFoot></AppFoot>
 </template>
 
 <style lang="scss" scoped>
