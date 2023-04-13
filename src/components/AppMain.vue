@@ -133,25 +133,52 @@
                     <h3 class="fw-bold">Our News</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, dolore nostrum</p>
                 </div>
-                <div class="card-cont d-flex justify-content-between text-center">
-                    <div class="cards d-flex flex-column gap-3">
-                        <div><img src="../assets/related-service-2-320x202.jpg" alt=""></div>
-                        <h5 class="fw-bold">Why You Need a SEO Agency Now</h5>
-                        <small>1 novembre 2017</small>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum quis dolor suscipit ad et voluptas facere voluptate.</p>
+                <div class="card-sec">
+                    <div class="card-cont d-flex justify-content-between text-center">
+                        <div class="cards d-flex flex-column gap-3">
+                            <div><img src="../assets/related-service-2-320x202.jpg" alt=""></div>
+                            <h5 class="fw-bold">Why You Need a SEO Agency Now</h5>
+                            <small>1 novembre 2017</small>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum quis dolor suscipit ad et voluptas facere voluptate.</p>
+                        </div>
+                        <div class="cards d-flex flex-column gap-3 text-center">
+                            <div><img src="../assets/related-service-4-320x202.jpg" alt=""></div>
+                            <h5 class="fw-bold">SEO Tips For Your Startup</h5>
+                            <small>1 novembre 2017</small>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum quis dolor suscipit ad et voluptas facere voluptate.</p>
+                        </div>
+                        <div class="cards d-flex flex-column gap-3">
+                            <div><img src="../assets/blog-post-6-320x202.jpg" alt=""></div>
+                            <h5 class="fw-bold">Image Optimization For Your Site</h5>
+                            <small>1 novembre 2017</small>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum quis dolor suscipit ad et voluptas facere voluptate.</p>
+                        </div>
                     </div>
-                    <div class="cards d-flex flex-column gap-3 text-center">
-                        <div><img src="../assets/related-service-4-320x202.jpg" alt=""></div>
-                        <h5 class="fw-bold">SEO Tips For Your Startup</h5>
-                        <small>1 novembre 2017</small>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum quis dolor suscipit ad et voluptas facere voluptate.</p>
+                    <div class="end-btn text-center">
+                        <button>GO TO NEWS</button>
                     </div>
-                    <div class="cards d-flex flex-column gap-3">
-                        <div><img src="../assets/blog-post-6-320x202.jpg" alt=""></div>
-                        <h5 class="fw-bold">Image Optimization For Your Site</h5>
-                        <small>1 novembre 2017</small>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum quis dolor suscipit ad et voluptas facere voluptate.</p>
+                </div>
+            </div>
+        </section>
+        <section id="sesta-sec">
+            <div class="sec-cnt w-75 m-auto">
+                <div class="fascia-testimonial">
+                    <div class="cliente d-flex flex-column align-items-center text-center gap-4">
+                        <h3 class="fw-bold">What Our Clients Say</h3>
+                        <div><img src="../assets/testimonials-2.jpg" alt=""></div>
+                        <div><i>Ability proceeds from a fusion of skills, knowledge, understanding and imagination, consolidated by experience.</i></div>
+                        <div><small><b>Luis Desalvo,</b> <span>CREO TECH</span></small></div>
+                        <div>
+                            <span class="fs-3">° </span>
+                            <span class="fs-3">°</span>
+                        </div>
                     </div>
+                </div>
+                <div class="fascia-partner d-flex justify-content-between">
+                    <img src="../assets/clients_partner_5-200x202.png" alt="">
+                    <img src="../assets/clients_partner_6-200x202.png" alt="">
+                    <img src="../assets/clients_partner_1-200x202.png" alt="">
+                    <img src="../assets/clients_partner_2-200x202.png" alt="">
                 </div>
             </div>
         </section>
@@ -273,6 +300,7 @@
         }
     }
     #quinta-sec {
+        background-color: rgb(247, 248, 250);
         .sec-cnt {
             width: 75%;
             margin: auto;
@@ -281,11 +309,44 @@
             padding: 5% 0 4% 0;
             text-align: center;
             }
-            .card-cont {
-                .cards{
-                    h5{
-                        color: rgb(255, 167, 55);
+            .card-sec {
+                .card-cont {
+                    .cards{
+                        h5{
+                            color: rgb(255, 167, 55);
+                        }
                     }
+                }
+                .end-btn {
+                    padding: 5% 0 4% 0;
+                }
+            }
+        }
+    }
+    #sesta-sec {
+        .sec-cnt {
+            .fascia-testimonial {
+                display: flex;
+                justify-content: center;
+                .cliente {
+                    width: 35%;
+                    padding-top: 4%;
+                    padding-bottom: 3%;
+                    div {
+                        img {
+                            border-radius: 50%;
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+            .fascia-partner {
+                width: 90%;
+                margin: auto;
+                border-top: .5px solid grey;
+                padding: 4% 0 4% 0;
+                img {
+                    width: 10%;
                 }
             }
         }
