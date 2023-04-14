@@ -17,14 +17,14 @@
                 <div id="logo-up">
                     <img src="../assets/logo_seo_w_1x.png" alt="logo">
                 </div>
-                <ul class="d-flex align-items-center">
+                <ul class="d-flex align-items-center pt-2">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Chi Siamo</a></li>
                     <li><a href="#">Cosa facciamo</a></li>
                     <li><a href="#">Dove Siamo</a></li>
-                    <li><a href="#">Lavoro</a> <button>applai</button></li>
+                    <li><a href="#">Lavoro</a> <button id="listed-btn">candidati</button></li>
                     <li><a href="#">Novità</a></li>
-                    <button>premi qua</button>
+                    <button class="ul-btn fw-bold">ADDENTRATI</button>
                 </ul>
             </nav>
         </section>
@@ -56,10 +56,25 @@
                     list-style-type: none;
                     gap: 2.5em;
                     li {
+                        white-space: nowrap;
                         a {
                             text-decoration: none;
                             color: white;
                         }
+                        #listed-btn {
+                            background-color: unset;
+                            color: rgb(255, 167, 55);
+                            border: solid 1px rgb(255, 167, 55);
+                            border-radius: 25px;
+                        }
+                    }
+                    button.ul-btn {
+                        background-color: rgb(255, 167, 55);
+                        color: white;
+                        border: none;
+                        width: 50%;
+                        height: 130%;
+                        border-radius: 25px;
                     }
                 }
             }

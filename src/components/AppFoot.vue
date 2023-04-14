@@ -50,9 +50,6 @@
                     }
                 }
             }
-            .last-items {
-
-            }
         }
     }
 </style>
