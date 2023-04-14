@@ -168,9 +168,9 @@
                         <div><img src="../assets/testimonials-2.jpg" alt=""></div>
                         <div><i>Ability proceeds from a fusion of skills, knowledge, understanding and imagination, consolidated by experience.</i></div>
                         <div><small><b>Luis Desalvo,</b> <span>CREO TECH</span></small></div>
-                        <div>
-                            <span class="fs-3">° </span>
-                            <span class="fs-3">°</span>
+                        <div class="puntini d-flex gap-1">
+                            <i class="fa-solid fa-circle"></i>
+                            <i class="fa-regular fa-circle"></i>
                         </div>
                     </div>
                 </div>
