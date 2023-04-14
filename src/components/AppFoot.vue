@@ -24,7 +24,7 @@
                     <li><a class="text-decoration-none" href="#">Dove Siamo</a></li>
                     <li><a class="text-decoration-none" href="#">Lavoro</a></li>
                     <li><a class="text-decoration-none" href="#">Novità</a></li>
-                    <li>premi qua</li>
+                    <li><a class="text-decoration-none" href="#">Addentrati</a></li>
                 </ul>
             </div>
             <div class="last-items pb-5 d-flex flex-column gap-4">
@@ -47,6 +47,9 @@
                 .links {
                     a {
                         color: black;
+                    }
+                    a:hover {
+                        color: rgb(255, 167, 55);
                     }
                 }
             }

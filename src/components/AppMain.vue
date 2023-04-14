@@ -51,21 +51,25 @@
                         <div><i class="fa-brands fa-google fs-4 icone-main-2"></i></div>
                         <h4 class="fw-bold">Google SEO</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum quis dolor suscipit ad et voluptas facere voluptate.</p>
+                        <a href="#">Scopri di Più ></a>
                     </div>
                     <div class="cards d-flex flex-column gap-3">
                         <div><i class="fa-solid fa-gear fs-4 icone-main-2"></i></div>
                         <h4 class="fw-bold">Brand Strategy</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum quis dolor suscipit ad et voluptas facere voluptate.</p>
+                        <a href="#">Scopri di Più ></a>
                     </div>
                     <div class="cards d-flex flex-column gap-3">
                         <div><i class="fa-solid fa-building fs-4 icone-main-2"></i></div>
                         <h4 class="fw-bold">Local SEO</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum quis dolor suscipit ad et voluptas facere voluptate.</p>
+                        <a href="#">Scopri di Più ></a>
                     </div>
                     <div class="cards d-flex flex-column gap-3">
                         <div><i class="fa-solid fa-chart-column fs-4 icone-main-2"></i></div>
                         <h4 class="fw-bold">SEO Analysis</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum quis dolor suscipit ad et voluptas facere voluptate.</p>
+                        <a href="#">Scopri di Più ></a>
                     </div>
                 </div>
             </div>
@@ -85,7 +89,7 @@
                     <div class="foto"><img src="../assets/case-study-gallery-6-1-800x600.jpg" alt=""></div>
                 </div>
                 <div class="end-btn">
-                    <button>View Our Work</button>
+                    <button class="p-2">VIEW OUR WORK</button>
                 </div>
             </div>
         </section>
@@ -100,28 +104,28 @@
                         <h4 class="fw-bold">Standard</h4>
                         <p class="text-center">5 Projects</p>
                         <p class="text-center">5 GB Storage</p>
-                        <p class="text-center">Unlimited users</p>
+                        <p class="text-center">Unlimited Users</p>
                         <button>START TODAY</button>
                     </div>
                     <div class="cards d-flex flex-column align-items-center gap-3">
                         <h4 class="fw-bold">Premium</h4>
                         <p class="text-center">10 Projects</p>
                         <p class="text-center">15 GB Storage</p>
-                        <p class="text-center">Unlimited users</p>
+                        <p class="text-center">Unlimited Users</p>
                         <button>START TODAY</button>
                     </div>
                     <div class="cards d-flex flex-column align-items-center gap-3">
                         <h4 class="fw-bold">Professional</h4>
                         <p class="text-center">15 Projects</p>
                         <p class="text-center">30 GB Storage</p>
-                        <p class="text-center">Unlimited users</p>
+                        <p class="text-center">Unlimited Users</p>
                         <button>START TODAY</button>
                     </div>
                     <div class="cards d-flex flex-column align-items-center gap-3">
                         <h4 class="fw-bold">Extreme</h4>
                         <p class="text-center">Unlimited Projects</p>
                         <p class="text-center">Unlimited Storage</p>
-                        <p class="text-center">Unlimited users</p>
+                        <p class="text-center">Unlimited Users</p>
                         <button>START TODAY</button>
                     </div>
                 </div>
@@ -225,6 +229,11 @@
                         }
                     }
                 }
+                .cards:hover {
+                    h4 {
+                        color: rgb(255, 167, 55);
+                    }
+                }
             }
         }
         
@@ -253,6 +262,15 @@
                             color: rgb(255, 167, 55);
                         }
                     }
+                    a {
+                        text-decoration: none;
+                        color: rgb(255, 167, 55);
+                    }
+                }
+                .cards:hover {
+                    h4 {
+                        color: rgb(255, 167, 55);
+                    }
                 }
             }
         }
@@ -280,6 +298,14 @@
             }
             .end-btn {
                 padding: 5% 0 4.5% 0;
+                button {
+                    width: 120%;
+                    background-color: rgb(255, 167, 55);
+                    font-weight: bold;
+                    border: none;
+                    border-radius: 25px;
+                    color: white;
+                }
             }
         }
     }
@@ -304,6 +330,27 @@
                     width: 24%;
                     padding: 2%;
                     background-color: rgb(255, 255, 255);
+                    button {
+                        width: 60%;
+                        border-radius: 25px;
+                        background-color: unset;
+                        padding: 3%;
+                        font-weight: bold;
+                    }
+                }
+                .cards:hover {
+                    h4 {
+                        color: rgb(96, 122, 254);
+                    }
+                    button {
+                        border: 2px solid rgb(96, 122, 254);
+                        color: rgb(96, 122, 254);
+                    }
+                    button:hover {
+                        background-color: rgb(255, 167, 55);
+                        color: white;
+                        border: 1px solid grey;
+                    }
                 }
             }
         }
@@ -328,6 +375,15 @@
                 }
                 .end-btn {
                     padding: 5% 0 4% 0;
+                    button {
+                        width: 14%;
+                        background-color: rgb(255, 167, 55);
+                        font-weight: bold;
+                        border: none;
+                        border-radius: 25px;
+                        color: white;
+                        padding: .7%;
+                    }
                 }
             }
         }
@@ -368,6 +424,15 @@
             .text-cont{
                 color: white;
                 padding: 5% 0 5% 0;
+                button {
+                    background-color: rgb(255, 167, 55);
+                    font-weight: bold;
+                    border: none;
+                    border-radius: 25px;
+                    color: white;
+                    padding: 1%;
+                    width: 35%;
+                }
             }
         }
     }

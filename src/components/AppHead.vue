@@ -33,8 +33,8 @@
                 <h1 class="fw-bold">SEM Campaigns Made Simple With Avada</h1>
                 <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, iusto dicta rem ducimus incidunt commodi optio ratione.</p>
                 <div class="d-flex gap-3" id="bottoni">
-                    <button>cip</button>
-                    <button>ciop</button>
+                    <button>BUY AVADA NOW</button>
+                    <button>CONTATTACI</button>
                 </div>
             </div>
         </section>
@@ -61,6 +61,9 @@
                             text-decoration: none;
                             color: white;
                         }
+                        a:hover {
+                            color: rgb(255, 167, 55);
+                        }
                         #listed-btn {
                             background-color: unset;
                             color: rgb(255, 167, 55);
@@ -81,6 +84,26 @@
             #head-text {
                 width: 40%;
                 padding: 10% 0 15% 0;
+                #bottoni {
+                    button:first-child {
+                        width: 40%;
+                        background-color: rgb(255, 167, 55);
+                        font-weight: bold;
+                        border: none;
+                        border-radius: 25px;
+                        color: white;
+                        padding: 1.5%;
+                    }
+                    button {
+                        width: 30%;
+                        background-color: rgb(85, 110, 237);
+                        font-weight: bold;
+                        border: none;
+                        border-radius: 25px;
+                        color: white;
+                        padding: 1.5%;
+                    }
+                }
             }
         }
     }
