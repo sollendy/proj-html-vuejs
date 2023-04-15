@@ -81,12 +81,30 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, dolore nostrum</p>
                 </div>
                 <div class="foto-cnt d-flex">
-                    <div class="foto"><img src="../assets/case-study-gallery-3-1-800x600.jpg" alt=""></div>
-                    <div class="foto"><img src="../assets/case-study-gallery-2-800x600.jpg" alt=""></div>
-                    <div class="foto"><img src="../assets/case-study-gallery-1-1-800x600.jpg" alt=""></div>
-                    <div class="foto"><img src="../assets/case-study-gallery-4-1-800x600.jpg" alt=""></div>
-                    <div class="foto"><img src="../assets/case-study-gallery-5-1-800x600.jpg" alt=""></div>
-                    <div class="foto"><img src="../assets/case-study-gallery-6-1-800x600.jpg" alt=""></div>
+                    <div class="foto">
+                        <img src="../assets/case-study-gallery-3-1-800x600.jpg" alt="">
+                        <i class="fa-solid fa-link link-icone fs-3"></i>
+                    </div>
+                    <div class="foto">
+                        <img src="../assets/case-study-gallery-2-800x600.jpg" alt="">
+                        <i class="fa-solid fa-link link-icone fs-3"></i>
+                    </div>
+                    <div class="foto">
+                        <img src="../assets/case-study-gallery-1-1-800x600.jpg" alt="">
+                        <i class="fa-solid fa-link link-icone fs-3"></i>
+                    </div>
+                    <div class="foto">
+                        <img src="../assets/case-study-gallery-4-1-800x600.jpg" alt="">
+                        <i class="fa-solid fa-link link-icone fs-3"></i>
+                    </div>
+                    <div class="foto">
+                        <img src="../assets/case-study-gallery-5-1-800x600.jpg" alt="">
+                        <i class="fa-solid fa-link link-icone fs-3"></i>
+                    </div>
+                    <div class="foto">
+                        <img src="../assets/case-study-gallery-6-1-800x600.jpg" alt="">
+                        <i class="fa-solid fa-link link-icone fs-3"></i>
+                    </div>
                 </div>
                 <div class="end-btn">
                     <button class="p-2">VIEW OUR WORK</button>
@@ -291,8 +309,23 @@
                 .foto {
                     width: 33%;
                     padding-bottom: 1%;
+                    position: relative;
                     img{
                         width: 100%;
+                    }
+                    .link-icone {
+                        display: none;
+                    }
+                }
+                .foto:hover {
+                    .link-icone {
+                        color: white;
+                        background-color: aqua;
+                        display: inline-block;
+                        position: absolute;
+                        right: 50%;
+                        top: 50%;
+                        z-index: 2;
                     }
                 }
             }
