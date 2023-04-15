@@ -318,13 +318,13 @@
                     }
                 }
                 .foto:hover {
+                    background-color: aqua;
                     .link-icone {
-                        color: white;
-                        background-color: aqua;
                         display: inline-block;
                         position: absolute;
                         right: 50%;
                         top: 50%;
+                        color: white;
                         z-index: 2;
                     }
                 }
