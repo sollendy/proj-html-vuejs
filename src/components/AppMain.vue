@@ -318,7 +318,10 @@
                     }
                 }
                 .foto:hover {
-                    background-color: aqua;
+                    background: aqua;
+                    img {
+                        display: none;
+                    }
                     .link-icone {
                         display: inline-block;
                         position: absolute;
