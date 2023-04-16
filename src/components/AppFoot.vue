@@ -7,6 +7,11 @@
                 store,
             }
         },
+        methods: {
+            arrayLink(links) {
+                return links.map(l => l.but ==='Addentrati' ? ({...l, ref: 'Addentrati', but:null}) : ({...l}))
+            }
+        },
     }
 </script>
 
@@ -18,13 +23,15 @@
                     <img src="../assets/logo_seo_1x.png" alt="logo sotto">
                 </div>
                 <ul class="links d-flex gap-5 list-unstyled">
-                    <li><a class="text-decoration-none" href="#">Home</a></li>
-                    <li><a class="text-decoration-none" href="#">Chi Siamo</a></li>
+                    <li v-for="(link, indice) in arrayLink(store.links)">
+                        <a class="text-decoration-none" href="#">{{ link.ref }}</a>
+                    </li>
+                    <!-- <li><a class="text-decoration-none" href="#">Chi Siamo</a></li>
                     <li><a class="text-decoration-none" href="#">Cosa facciamo</a></li>
                     <li><a class="text-decoration-none" href="#">Dove Siamo</a></li>
                     <li><a class="text-decoration-none" href="#">Lavoro</a></li>
                     <li><a class="text-decoration-none" href="#">Novità</a></li>
-                    <li><a class="text-decoration-none" href="#">Addentrati</a></li>
+                    <li><a class="text-decoration-none" href="#">Addentrati</a></li> -->
                 </ul>
             </div>
             <div class="last-items pb-5 d-flex flex-column gap-4">

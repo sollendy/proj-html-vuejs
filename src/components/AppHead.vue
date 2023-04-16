@@ -4,7 +4,7 @@
         name: "AppHead",
         data() {
             return {
-                store,
+                store
             }
         },
     }
@@ -18,13 +18,16 @@
                     <img src="../assets/logo_seo_w_1x.png" alt="logo">
                 </div>
                 <ul class="d-flex align-items-center pt-2">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Chi Siamo</a></li>
+                    <li v-for="(link, indice) in store.links">
+                        <a href="#">{{ link.ref }}</a>
+                        <button v-if="link.but" :id="link.status" :class="link.status">{{ link.but }}</button>
+                    </li>
+                    <!-- <li><a href="#">Chi Siamo</a></li>
                     <li><a href="#">Cosa facciamo</a></li>
                     <li><a href="#">Dove Siamo</a></li>
                     <li><a href="#">Lavoro</a> <button id="listed-btn">candidati</button></li>
                     <li><a href="#">Novità</a></li>
-                    <button class="ul-btn fw-bold">ADDENTRATI</button>
+                    <button class="ul-btn fw-bold">ADDENTRATI</button> -->
                 </ul>
             </nav>
         </section>
@@ -65,6 +68,7 @@
                             color: rgb(255, 167, 55);
                         }
                         #listed-btn {
+                            margin-left: 5px;
                             background-color: unset;
                             color: rgb(255, 167, 55);
                             border: solid 1px rgb(255, 167, 55);
@@ -75,9 +79,10 @@
                         background-color: rgb(255, 167, 55);
                         color: white;
                         border: none;
-                        width: 50%;
-                        height: 130%;
+                        width: 110%;
+                        height: 30px;
                         border-radius: 25px;
+                        text-transform: uppercase;
                     }
                 }
             }

@@ -7,6 +7,12 @@
                 store,
             }
         },
+        methods: {
+            testimonials(activeTestimonial) {
+                store.carosImgs = store.carosImgs.map((c) => ({...c, active: false}));
+                store.carosImgs[activeTestimonial].active = true;
+            }
+        }
     }
 </script>
 
@@ -120,6 +126,7 @@
                 <div class="card-cont d-flex justify-content-between">
                     <div class="cards d-flex flex-column align-items-center gap-3">
                         <h4 class="fw-bold">Standard</h4>
+                        <p class="prezzi fs-2 fw-bold"><sup class="non-blu ">$</sup>22<sup class="fs-5">99</sup><sub class="non-blu ">mensili</sub></p>
                         <p class="text-center">5 Projects</p>
                         <p class="text-center">5 GB Storage</p>
                         <p class="text-center">Unlimited Users</p>
@@ -127,6 +134,7 @@
                     </div>
                     <div class="cards d-flex flex-column align-items-center gap-3">
                         <h4 class="fw-bold">Premium</h4>
+                        <p class="prezzi fs-2 fw-bold"><sup class="non-blu ">$</sup>22<sup class="fs-5">99</sup><sub class="non-blu ">mensili</sub></p>
                         <p class="text-center">10 Projects</p>
                         <p class="text-center">15 GB Storage</p>
                         <p class="text-center">Unlimited Users</p>
@@ -134,6 +142,7 @@
                     </div>
                     <div class="cards d-flex flex-column align-items-center gap-3">
                         <h4 class="fw-bold">Professional</h4>
+                        <p class="prezzi fs-2 fw-bold"><sup class="non-blu ">$</sup>22<sup class="fs-5">99</sup><sub class="non-blu ">mensili</sub></p>
                         <p class="text-center">15 Projects</p>
                         <p class="text-center">30 GB Storage</p>
                         <p class="text-center">Unlimited Users</p>
@@ -141,6 +150,7 @@
                     </div>
                     <div class="cards d-flex flex-column align-items-center gap-3">
                         <h4 class="fw-bold">Extreme</h4>
+                        <p class="prezzi fs-2 fw-bold"><sup class="non-blu ">$</sup>22<sup class="fs-5">99</sup><sub class="non-blu ">mensili</sub></p>
                         <p class="text-center">Unlimited Projects</p>
                         <p class="text-center">Unlimited Storage</p>
                         <p class="text-center">Unlimited Users</p>
@@ -185,16 +195,23 @@
         <section id="sesta-sec">
             <div class="sec-cnt w-75 m-auto">
                 <div class="fascia-testimonial">
-                    <div class="cliente d-flex flex-column align-items-center text-center gap-4">
-                        <h3 class="fw-bold">What Our Clients Say</h3>
-                        <div><img src="../assets/testimonials-2.jpg" alt=""></div>
-                        <div><i>Ability proceeds from a fusion of skills, knowledge, understanding and imagination, consolidated by experience.</i></div>
-                        <div><small><b>Luis Desalvo,</b> <span>CREO TECH</span></small></div>
-                        <div class="puntini d-flex gap-1">
-                            <i class="fa-solid fa-circle"></i>
-                            <i class="fa-regular fa-circle"></i>
+                    <div v-for="(img, i) in store.carosImgs" class="cliente flex-column align-items-center text-center gap-4" :class="img.active ? 'd-flex' : 'd-none'">
+                            <h3 class="fw-bold">What Our Clients Say</h3>
+                            <div>
+                                <img :src="img.img" alt="">
+                            </div>
+                            <div>
+                                <i>{{ img.text }}</i>
+                            </div>
+                            <div>
+                                <small>
+                                    <b>{{ img.name }},</b> <span>{{ img.company }}</span>
+                                </small>
+                            </div>
+                            <div class="puntini d-flex gap-1">
+                                <i class="fa-circle cursor-pointer" v-for="(bullet, index) in store.carosImgs" :class="bullet.active ? 'fa-solid' : 'fa-regular'" @click="testimonials(index)"></i>
+                            </div>
                         </div>
-                    </div>
                 </div>
                 <div class="fascia-partner d-flex justify-content-around">
                     <img src="../assets/clients_partner_5-200x202.png" alt="">
@@ -366,6 +383,13 @@
                     width: 24%;
                     padding: 2%;
                     background-color: rgb(255, 255, 255);
+                    .prezzi {
+                        color: rgb(96, 122, 254);
+                        .non-blu {
+                            color: rgb(50, 50, 50);
+                            font-size: 15px;
+                        }
+                    }
                     button {
                         width: 60%;
                         border-radius: 25px;
