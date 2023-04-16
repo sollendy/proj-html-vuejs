@@ -126,7 +126,7 @@
                 <div class="card-cont d-flex justify-content-between">
                     <div class="cards d-flex flex-column align-items-center gap-3">
                         <h4 class="fw-bold">Standard</h4>
-                        <p class="prezzi fs-2 fw-bold"><sup class="non-blu ">$</sup>22<sup class="fs-5">99</sup><sub class="non-blu ">mensili</sub></p>
+                        <p class="prezzi fs-2 fw-bold"><sup class="non-blu ">$</sup>19<sup class="fs-5">99</sup><sub class="non-blu ">mensili</sub></p>
                         <p class="text-center">5 Projects</p>
                         <p class="text-center">5 GB Storage</p>
                         <p class="text-center">Unlimited Users</p>
@@ -134,7 +134,7 @@
                     </div>
                     <div class="cards d-flex flex-column align-items-center gap-3">
                         <h4 class="fw-bold">Premium</h4>
-                        <p class="prezzi fs-2 fw-bold"><sup class="non-blu ">$</sup>22<sup class="fs-5">99</sup><sub class="non-blu ">mensili</sub></p>
+                        <p class="prezzi fs-2 fw-bold"><sup class="non-blu ">$</sup>29<sup class="fs-5">99</sup><sub class="non-blu ">mensili</sub></p>
                         <p class="text-center">10 Projects</p>
                         <p class="text-center">15 GB Storage</p>
                         <p class="text-center">Unlimited Users</p>
@@ -142,7 +142,7 @@
                     </div>
                     <div class="cards d-flex flex-column align-items-center gap-3">
                         <h4 class="fw-bold">Professional</h4>
-                        <p class="prezzi fs-2 fw-bold"><sup class="non-blu ">$</sup>22<sup class="fs-5">99</sup><sub class="non-blu ">mensili</sub></p>
+                        <p class="prezzi fs-2 fw-bold"><sup class="non-blu ">$</sup>39<sup class="fs-5">99</sup><sub class="non-blu ">mensili</sub></p>
                         <p class="text-center">15 Projects</p>
                         <p class="text-center">30 GB Storage</p>
                         <p class="text-center">Unlimited Users</p>
@@ -150,7 +150,7 @@
                     </div>
                     <div class="cards d-flex flex-column align-items-center gap-3">
                         <h4 class="fw-bold">Extreme</h4>
-                        <p class="prezzi fs-2 fw-bold"><sup class="non-blu ">$</sup>22<sup class="fs-5">99</sup><sub class="non-blu ">mensili</sub></p>
+                        <p class="prezzi fs-2 fw-bold"><sup class="non-blu ">$</sup>59<sup class="fs-5">99</sup><sub class="non-blu ">mensili</sub></p>
                         <p class="text-center">Unlimited Projects</p>
                         <p class="text-center">Unlimited Storage</p>
                         <p class="text-center">Unlimited Users</p>
